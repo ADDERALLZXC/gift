@@ -21,7 +21,8 @@
 	min-width: 275px;
 	min-height: 160px;
 	margin: 0 auto;
-	background: url(img/Background.jpg);
+	background: url(img/fon_-715x416.jpg);
+	background-size: contain;
 }
 
 .gift-leftside {
@@ -34,14 +35,53 @@
 
 .gift-rightside {
 	width: 50%;
-	height: 70%;
+	margin-left: auto;
+	height: 80%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	position: relative;
 }
 
 .gift-socks-image {
 	width: 70%;
+	transform: rotateZ(-45deg);
+}
+
+.gift-circle {
+	background: #d4a112;
+	background: -webkit-linear-gradient(
+		to right,
+		#d4a112 0%,
+		#e9b422 50%,
+		#d4a112 100%
+	);
+	background: -moz-linear-gradient(
+		to right,
+		#d4a112 0%,
+		#e9b422 50%,
+		#d4a112 100%
+	);
+	background: linear-gradient(
+		to right,
+		#d4a112 0%,
+		#e9b422 50%,
+		#d4a112 100%
+	);
+
+	padding: 3% 4%;
+	text-align: center;
+	border-radius: 100px;
+	color: #265338;
+	font-weight: 900;
+	position: absolute;
+	line-height: 1;
+	right: 20%;
+	bottom: 0;
+}
+
+.gift-circle span {
+	font-size: 25px;
 }
 
 .gift-text {
@@ -81,7 +121,6 @@
 		rgba(189, 139, 0, 1) 100%
 	);
 	border: 0;
-	padding: 12px 15px;
 	cursor: pointer;
 	border-radius: 15px;
 	transition: 0.5s;
@@ -89,7 +128,7 @@
 	text-transform: uppercase;
 	font-weight: 700;
 	width: 76%;
-	height: 50px;
+	height: 45px;
 	font-size: 12px;
 	margin: 0 auto;
 }
